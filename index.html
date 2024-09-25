@@ -12,24 +12,25 @@
         <a href="#" class="logo"><span>Aj</span>ay</a>
 
         <nav class="navbar">
-            <a href="#">Portfolio</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#ContactMe" class="nav-link">Contact</a>
         </nav>
+        
 
         
     </header>
 
-    <section class="home">
+    <section id="home" class="home">
         <div class="home-content">
             <h3> Hi</h3>
             <h1>I'm <span>Ankam Ajay<br></span>Student</h1>
 
             <p>Currently persuing Masters of Science in Information Technology from IIIT Hyderabad</p>
             <div class="btn-box">
-                <button class="btn-1">Hire me</button>
+                <!-- <button class="btn-1">Hire me</button> -->
             </div>
         </div>
         <div class="img-box">
@@ -38,6 +39,12 @@
        
     </section>
     <section id="about">
+        <br>
+        </br>
+        <br>
+        </br>
+        <br>
+        </br>
         <h1>Abo<span>ut</span></h1>
         <div class="about">
             
@@ -48,6 +55,12 @@
         </div>
     </section>
     <section id="skills">
+        <br>
+        </br>
+        <br>
+        </br>
+        <br>
+        </br>
         <h1>Ski<span>lls</span></h1>
         <div class="skills" >
             
@@ -65,8 +78,14 @@
     </section>
     <section id="education">
         <div class="education">
+            <br>
+            </br>
+            <br>
+            </br>
+            <br>
+            </br>
             <h1>Edu<span>cation</span></h1>
-            <ul>
+            <ol>
                 <li class="line">
                     <p class="dep"> Master of science in Information Technology</p>
                     <p class="ins">IIIT Hyderabad</p>
@@ -88,11 +107,13 @@
                     <p class="dep">SSC - 10th (CGPA - 9.0)</p>
                     <p class="ins">Trinity High school</p>
                 </li>
-            </ul>
+            </ol>
         </div>
     </section>
 
-    <section class="contact-form">
+    <section id="ContactMe" class="contact-form">
+        <br>
+        </br>
         <h2 class="contact-me">Contact<span>Me</span></h2>
         
         <form action="#">
@@ -113,6 +134,29 @@
 
 
     </section>
+    <script>
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.navbar a');
+    
+            let current = '';
+    
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 50) {
+                    current = section.getAttribute('id');
+                }
+            });
+    
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+    
     <footer class="footer">
         <div class="social">
             <a href="https://www.facebook.com/ajay.darling.9484?mibextid=rS40aB7S9Ucbxw6v"><i class='bx bxl-facebook-circle'></i></a>
