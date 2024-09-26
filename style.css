@@ -305,3 +305,118 @@ h1 {
     margin-bottom: 30px; /* Add some space below the heading */
 }
 
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 241, 241);
+}
+
+.navbar {
+    background-color: #333; /* Dark background for navbar */
+    color: white; /* Text color */
+    padding: 15px 0; /* Padding for navbar */
+    text-align: center;
+}
+
+.navbar a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size for links */
+    margin: 0 15px; /* Spacing between links */
+    transition: color 0.3s; /* Transition for color change */
+}
+
+.navbar a:hover {
+    color: #ffcc00; /* Color change on hover */
+}
+
+.projects {
+    padding: 50px 12%;
+    text-align: center;
+}
+
+.projects h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333; /* Darker color for heading */
+}
+
+.project-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.project-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.project-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #444; /* Slightly lighter color for titles */
+}
+
+.project-item img {
+    width: 100%; /* Make the image responsive */
+    max-width: 400px; /* Limit the max width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555; /* Slightly darker color for text */
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .projects {
+        padding: 30px 5%;
+    }
+
+    .projects h1 {
+        font-size: 28px; /* Slightly smaller heading on smaller screens */
+    }
+
+    .project-item {
+        margin: 15px 0; /* Reduce margin on smaller screens */
+    }
+
+    .project-item h2 {
+        font-size: 20px; /* Adjust project title size */
+    }
+
+    .project-item p {
+        font-size: 14px; /* Adjust paragraph size */
+    }
+}
